@@ -206,3 +206,31 @@ Processing by PicturesController#show as HTML
   [1m[36mPicture Load (0.2ms)[0m  [1mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT 1[0m  [["id", 1]]
   Rendered pictures/show.html.erb within layouts/application (0.4ms)
 Completed 200 OK in 34ms (Views: 20.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pictures/1" for ::1 at 2015-11-25 20:39:34 -0500
+Processing by PicturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPicture Load (0.1ms)[0m  SELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pictures/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 25ms (Views: 19.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pictures/" for ::1 at 2015-11-25 20:39:35 -0500
+Processing by PicturesController#index as HTML
+  [1m[36mPicture Load (0.1ms)[0m  [1mSELECT "pictures".* FROM "pictures"[0m
+  Rendered pictures/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pictures/new" for ::1 at 2015-11-25 20:39:45 -0500
+Processing by PicturesController#new as HTML
+  Rendered pictures/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 23ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pictures" for ::1 at 2015-11-25 20:39:57 -0500
+Processing by PicturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KWjLOrueCdxG50s4nMN43fErieLvT/SYJiGaTPn8vQYVHfr1J+Tu1qKnB3Y/1s5uXnYbthftCJqg+z8uspurlg==", "artist"=>"The", "title"=>"The", "url"=>"www.google.com", "commit"=>"Save"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms)
