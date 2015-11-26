@@ -198,3 +198,11 @@ Started GET "/assets/pictures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dd
 
 
 Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-25 20:09:46 -0500
+
+
+Started GET "/pictures/1" for ::1 at 2015-11-25 20:14:26 -0500
+Processing by PicturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPicture Load (0.2ms)[0m  [1mSELECT  "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pictures/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 20.9ms | ActiveRecord: 0.6ms)
