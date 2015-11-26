@@ -1,5 +1,5 @@
 <h1> Add A Picture </h1>
-<%= form_tag "/pictures" do %>
+<%= form_for @picture do |f| %>
   <p>
     <%= label_tag :artist %><br>
     <%= text_field_tag :artist %>
